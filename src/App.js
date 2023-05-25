@@ -18,7 +18,7 @@ export default function App() {
   initodo=ini_todo()
     let [title, settitle] = useState("")
     let [desc, setdesc] = useState("")
-    let [todos, settodos] = useState(initodo)
+    let [todos, settodos] = useState([])
   
   const ondelete=(todo)=>{
     let arr=todos.filter((e)=>{return e!==todo})
